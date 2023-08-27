@@ -72,7 +72,7 @@
             color: #fff;
             border: none;
             padding: 10px 20px;
-            cursor: pointer;
+            font-family: "Lato", sans-serif;
             border-radius: 5px;
             z-index: 999;
         }
@@ -111,12 +111,12 @@
     <section class="section-content-2">
         <div class="container-content-section-2">
             <ul class="estagio">
-                <li class="escute">Escutou. <img class="location1"
-                        src="./pages-icons/volume_up_FILL0_wght400_GRAD0_opsz48.png" alt=""></li>
-                <li class="observe">Observou. <img class="location2"
-                        src="./pages-icons/visibility_FILL0_wght400_GRAD0_opsz48.png" alt=""> </li>
-                <li class="ache">Achou. <img class="location3"
-                        src="./pages-icons/travel_explore_FILL0_wght400_GRAD0_opsz48.png" alt=""></li>
+                <a href="products.html" target="_blank"><li class="escute">Escutou. <img class="location1"
+                    src="./pages-icons/volume_up_FILL0_wght400_GRAD0_opsz48.png" alt=""></li></a>
+                        <a href="products.html" target="_blank" ><li class="observe">Observou. <img class="location2"
+                            src="./pages-icons/visibility_FILL0_wght400_GRAD0_opsz48.png" alt=""> </li></a>
+                        <a href="products.html" target="_blank"><li class="ache">Achou. <img class="location3"
+                            src="./pages-icons/travel_explore_FILL0_wght400_GRAD0_opsz48.png" alt=""></li></a>
             </ul>
             <div class="container-logo-img-section-2">
                 <img class="logo-img-section-2" src="./img-main-page/LOGO-IMG-SECTION-2.jpg" alt="logo-section-2">
@@ -228,19 +228,20 @@
         <div id="termos-container">
             <h2>Aceite os cookies</h2>
             <p>Se você deseja aproveitar ao máximo sua visita em nosso site, por favor, clique no botão "Aceitar
-                cookies" ou continue navegando. Você pode alterar suas preferências de cookies a qualquer momento nas
-                configurações do seu navegador.</p>
-            <p>Obrigado por nos permitir tornar sua experiência online mais agradável e personalizada através dos
-                cookies.</p>
-
+                cookies" ou continue navegando.
+            </p>
+            <br>
             <label>
                 <input type="checkbox" id="aceite-termos"> Eu aceito os termos de uso.
             </label>
 
-            <button id="aceitar-termos" style="border: none; width: 20px; background-color: #000000;" disabled>Aceitar</button>
+            <button id="aceitar-termos" style="border: none; width: 20px; padding: 10px; cursor: pointer; width: 100%; font-weight: 800;" disabled>ACEITAR</button>
         </div>
 
         <style>
+            button#aceitar-termos:hover{
+                transition: 0.8s;
+            }
             #termos-container {
                 position: fixed;
                 bottom: 10px;
@@ -251,10 +252,13 @@
                 font-family: 'Lato';
                 border: 1px solid #ccc;
                 text-align: center;
+                background-color: white;
+                z-index: 999;
             }
 
             #aceitar-termos {
                 margin-top: 10px;
+                transition: 0.8s;
             }
         </style>
 
@@ -265,6 +269,8 @@
 
             checkbox.addEventListener('change', function () {
                 button.disabled = !this.checked;
+                button.style.backgroundColor = 'black';
+                button.style.color = 'white';
             });
 
             button.addEventListener('click', function () {
@@ -273,12 +279,13 @@
         </script>
 
         <div class="topo"
-            style="position: fixed; bottom: 0;right: 10px ; width: 50px;height: 50px ;color: white; z-index: 999; display: flex; justify-content: center; align-items: center;">
+            style="position: fixed; bottom: 0;right: 10px ; width: 50px;height: 50px ;color: white;background-color: black; z-index: 999; display: flex; justify-content: center; align-items: center; border-top-left-radius:30px; border-top-right-radius:30px;">
             <a href="#" style="color: white; text-decoration: none;">UP</a>
         </div>
 
     </footer>
     <script src="./reveal.js"></script>
+    <script src="./darkmode.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../php/cadastro.php" method="POST" id="formulario">
+        <label for="dispid">ID do dispositivo:</label>
+        <br>
+        <input type="text" id="dispid" name="id" required class="campo" autocomplete="off">
+        <br>
+        <br>
+        <br>
+        <label for="name">Nome do dispositivo:</label>
+        <br>
+        <input type="text" id="name" name="nome" required class="campo" autocomplete="off">
+        <br>
+        <br>
+        <br>
+        <div class="botoes">
+          <input type="submit" value="Cadastrar" class="botao">
+          <a href="delete.html" name="delete" class="botao">Deletar</a>
+          <a href="alterar.html" name="alter" class="botao">Alterar</a>
+          <a href="../php/visualizar.php" name="visu" class="botao">Visualizar</a>
+        </div>
+    </form>
+    
+</body>
+</html>

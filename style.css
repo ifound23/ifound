@@ -271,7 +271,6 @@ img.world-icon {
 }
 
 .frase2 {
-  line-height: 0.8em;
   font-size: 70px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -381,6 +380,11 @@ ul.estagio {
   list-style-type: none;
   line-height: 4.1em;
   transition: 300ms;
+}
+
+ul.estagio > a {
+  text-decoration: none;
+  color: black;
 }
 
 li.escute {
