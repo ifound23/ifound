@@ -1,0 +1,40 @@
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes formulario {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX();
+  }
+}
+@keyframes carlos {
+  from {
+    transform: translateX(33em);
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(1);
+    transform: translateX(0em);
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=settings.css.map */
