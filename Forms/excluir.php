@@ -31,6 +31,9 @@ require 'connectionDB.php';
                 <li><a href="esquecisenha.php"><label for="">Esqueci minha Senha</label></a></li>
                 <li><a href="singup.php"><label for="">Cadastre-se</label></a></li>
             </ul>
+            <ul class="opcoes">
+                <li><a href="login.php"><label for="" class="link-voltar">Voltar</label></a></li>
+            </ul>
         </form>
     </div>
 </body>

@@ -5,7 +5,7 @@ html {
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background: linear-gradient(#000000, #ffffff);
+    background:black;
   }
   
   .login-box {
@@ -111,7 +111,21 @@ html {
     color: white;
   }
 
-  label.eclui{
+  label.exclui{
     text-decoration: underline;
     color: white;
   }
+
+  label.link-voltar{
+    color: white;
+
+    text-decoration: none;
+    transition: 0.8s;
+  }
+
+  label.link-voltar:hover{
+    text-decoration: none;
+    color: rgb(0, 128, 255);
+    transition: 0.8s;
+  }
+

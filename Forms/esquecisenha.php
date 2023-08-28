@@ -24,7 +24,7 @@ require 'connectionDB.php';
             <input class="button" value="enviar" name="esquecisenha" type="submit">
             <ul class="opcoes">
                 <li><a href="alterarsenha.php"><label for="">Alterar a senha</label></a></li>
-                <li><a href="login.php"><label for="">Voltar</label></a></li>
+                <li><a href="login.php"><label for="" class="link-voltar">Voltar</label></a></li>
             </ul>
         </form>
     </div>
