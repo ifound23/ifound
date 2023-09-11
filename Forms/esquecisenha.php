@@ -15,7 +15,7 @@ require 'connectionDB.php';
 
 <body>
     <div class="login-box">
-        <h2>Alterar Senha</h2>
+        <h2>Esqueci minha senha</h2>
         <form action="main.php" method="post">
             <div class="user-box">
                 <input type="email" name="email" id="" required="">
