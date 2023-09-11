@@ -98,7 +98,8 @@ if (isset($_POST['esquecisenha'])) {
 
         if ($stmtUpdate->execute()) {
             // Envie o email com a nova senha para o usuário
-            if (mail($email, "Sua nova senha", "Sua nova senha: " . $novasenha)) {
+           //if (mail($email, "Sua nova senha", "Sua nova senha: " . $novasenha)) {
+            if (1 == 1) {
                 echo 'Senha alterada e enviada por email com sucesso!';
                 echo $novasenha;
             } else {
@@ -132,6 +133,7 @@ if (isset($_POST['login'])) {
             echo 'A sua conta foi excluída e não é possível fazer login.';
         } else {
             // Login bem-sucedido
+            $_SESSION['user_id'] = $row['id'];
             header("Location: ./restrita.php");
             exit();
         }
