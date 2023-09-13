@@ -134,7 +134,7 @@ if (isset($_POST['login'])) {
         } else {
             // Login bem-sucedido
             $_SESSION['user_id'] = $row['id'];
-            header("Location: ./restrita.php");
+            header("Location: ../restrita.html");
             exit();
         }
     } else {
