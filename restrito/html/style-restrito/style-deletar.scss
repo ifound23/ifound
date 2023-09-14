@@ -247,8 +247,9 @@ div.delete-line > a#deletar {
 }
 
 div.delete-line:hover > a#deletar {
-    color: #64ff97;
-    border-color: #64ff97;
+    color: #f40900;
+    border-color: #f40900;
+
     @include linelink-hover();
 }
 

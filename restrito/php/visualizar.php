@@ -18,7 +18,11 @@ $result = $conn->query($sql);
 </head>
 <body>
 <div class="tabela">
+<<<<<<< HEAD
         <table class="">
+=======
+        <table class="text-white table-bg">
+>>>>>>> 9f2cc7157573fe9e9e77d082f874cdcd2c9b6704
             <thead>
                 <tr>
                     <th scope="col" class='cell-head hash'>ID:</th>
