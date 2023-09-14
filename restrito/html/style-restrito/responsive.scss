@@ -1,0 +1,96 @@
+@import "./settingscopy.scss";
+
+@media (max-width:1450px){
+    
+    body {
+        width: 100%;
+        height: 120vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    
+        overflow:visible;
+    }
+    
+    div.content-container{
+        width: 100%;
+        height: 200vh;
+        position: relative;
+        background-color: rgb(0, 0, 0);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form#formulario{
+        width: 40%;
+        margin-top: 100px;
+    }
+
+    div.line-container{
+        margin-top: 100px;
+        transform: rotate(0);
+    }
+
+    div.botoes {
+        @include botoes-flex-column();
+        margin-top: 100px;
+        animation: 1.8s navegarestrito ease-in-out;
+    }
+
+    div.delete-line {
+        @include template-line();
+    }
+    
+    div.delete-line > img.lixo {
+        @include line-hover();
+        filter: saturate(0%);
+    }
+    
+    div.delete-line:hover > img.lixo {
+        @include line-nothover();
+    }
+    
+    div.delete-line > a#deletar {
+        color: #ffffff;
+        border-color: #ffffff;
+        @include linelink-nothover();
+    }
+    
+    div.alter-line {
+        @include template-line();
+    }
+    
+    div.alter-line > img.altera {
+        @include line-hover();
+        filter: saturate(0%);
+    }
+    
+    div.alter-line > a#alterar {
+        color: #ffffff;
+        border-color: #ffffff;
+        @include linelink-nothover();
+    }
+    
+    div.vision-line {
+        @include template-line();
+    }
+    
+    div.vision-line > img.vizaoun {
+        @include line-hover();
+        filter: saturate(0%);
+    }
+    
+    div.vision-line > a#visao {
+        color: #ffffff;
+        border-color: #ffffff;
+        @include linelink-nothover();
+    }
+
+    footer.volta-container>a{
+        margin-top: 200px;
+    }
+
+}

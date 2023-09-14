@@ -1,0 +1,420 @@
+@keyframes sloganmove {
+  from {
+    opacity: 0;
+    transform: translatey(-30em);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0em);
+  }
+}
+@keyframes formrestrito {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes navegarestrito {
+  from {
+    opacity: 0;
+    transform: translateX(50em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0em);
+  }
+}
+@keyframes grow-line {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 35%;
+  }
+}
+@keyframes grow-line2 {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 25%;
+  }
+}
+@keyframes voltalink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header.topo {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 150px;
+}
+
+img.main-page-icon {
+  display: flex;
+  position: relative;
+  filter: invert(1);
+}
+
+header.topo > span.slogan {
+  position: relative;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: white;
+  line-height: 30px;
+  padding-left: 15px;
+  border-left: solid 4px white;
+  transition: 600ms;
+  animation: 2s sloganmove ease-in-out;
+}
+
+header.topo > span.slogan:hover {
+  border-left: solid 20px white;
+  transition: 600ms;
+}
+
+header.topo > img.main-page-icon {
+  animation: 2.1s sloganmove ease-in-out;
+}
+
+div.content-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form#formulario {
+  width: 55%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  border: 2px solid white;
+  border-radius: 6%;
+  animation: 1.8s voltalink ease-in-out;
+}
+
+form.form-altera {
+  height: 65vh;
+  animation: 2.8s voltalink ease-in-out;
+}
+
+input#dispid {
+  line-height: 35px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: solid 2px black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input#dispid:focus {
+  outline: none;
+}
+
+input#name {
+  line-height: 35px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: solid 2px black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input#name:focus {
+  outline: none;
+}
+
+label.nomelbl {
+  font-size: 18px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  padding-bottom: 60px;
+}
+
+label.nomelbl2 {
+  font-size: 18px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  padding-bottom: 60px;
+}
+
+label.dispositivolbl {
+  font-size: 18px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+input.botao {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  border: 0px solid black;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+input.botao:hover {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 0px rgb(255, 255, 255), 8px 8px 0px rgb(0, 0, 0);
+  transform: translate(-10px, -10px);
+  transition: 0.3s;
+}
+
+div.line-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  transform: rotate(90deg);
+  animation: 2s grow-line ease-in-out;
+}
+
+div.botoes {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: 1.8s navegarestrito ease-in-out;
+}
+
+div.botoes > a {
+  line-height: 50px;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+div.delete-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+div.delete-line > img.lixo {
+  display: flex;
+  margin-left: 20px;
+  transform: translateX(100px);
+  width: 70px;
+  opacity: 0;
+  transition: 400ms;
+}
+
+div.delete-line:hover > img.lixo {
+  display: flex;
+  margin-left: 20px;
+  transform: translateX(0px);
+  width: 70px;
+  opacity: 1;
+  transition: 400ms;
+}
+
+div.delete-line > a#deletar {
+  color: white;
+  padding-right: 5px;
+  border-right: solid 1px rgba(255, 0, 0, 0);
+  text-decoration: none;
+  transition: 400ms;
+}
+
+div.delete-line:hover > a#deletar {
+  color: #f40900;
+  border-color: #f40900;
+  padding-right: 10px;
+  border-right: solid 10px;
+  transition: 400ms;
+}
+
+div.alter-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+div.alter-line > img.altera {
+  display: flex;
+  margin-left: 20px;
+  transform: translateX(100px);
+  width: 70px;
+  opacity: 0;
+  transition: 400ms;
+}
+
+div.alter-line:hover > img.altera {
+  display: flex;
+  margin-left: 20px;
+  transform: translateX(0px);
+  width: 70px;
+  opacity: 1;
+  transition: 400ms;
+}
+
+div.alter-line > a#alterar {
+  color: white;
+  padding-right: 5px;
+  border-right: solid 1px rgba(255, 0, 0, 0);
+  text-decoration: none;
+  transition: 400ms;
+}
+
+div.alter-line:hover > a#alterar {
+  color: #ffc700;
+  border-color: #ffc700;
+  padding-right: 10px;
+  border-right: solid 10px;
+  transition: 400ms;
+}
+
+div.vision-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+div.vision-line > img.vizaoun {
+  display: flex;
+  margin-left: 20px;
+  transform: translateX(100px);
+  width: 70px;
+  opacity: 0;
+  transition: 400ms;
+}
+
+div.vision-line:hover > img.vizaoun {
+  display: flex;
+  margin-left: 20px;
+  transform: translateX(0px);
+  width: 70px;
+  opacity: 1;
+  transition: 400ms;
+}
+
+div.vision-line > a#visao {
+  color: white;
+  padding-right: 5px;
+  border-right: solid 1px rgba(255, 0, 0, 0);
+  text-decoration: none;
+  transition: 400ms;
+}
+
+div.vision-line:hover > a#visao {
+  color: #0094ff;
+  border-color: #0094ff;
+  padding-right: 10px;
+  border-right: solid 10px;
+  transition: 400ms;
+}
+
+footer.volte-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer.volte-container > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+  animation: 2s voltalink ease-in-out;
+  transition: 400ms;
+}
+
+footer.volte-container > a:hover {
+  width: 100px;
+  height: 35px;
+  background-color: white;
+  color: black;
+  transition: 400ms;
+}/*# sourceMappingURL=style-cadastro.css.map */

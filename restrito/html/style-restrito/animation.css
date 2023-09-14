@@ -1,0 +1,56 @@
+@keyframes sloganmove {
+  from {
+    opacity: 0;
+    transform: translatey(-30em);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0em);
+  }
+}
+@keyframes formrestrito {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes navegarestrito {
+  from {
+    opacity: 0;
+    transform: translateX(50em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0em);
+  }
+}
+@keyframes grow-line {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 35%;
+  }
+}
+@keyframes grow-line2 {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 25%;
+  }
+}
+@keyframes voltalink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=animation.css.map */
