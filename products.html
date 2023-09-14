@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-hovers.css">
+
+    <!--font do googleapis-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@700&family=Rubik:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!--icon pagina-->
+    <link rel="page refencial icon" href="./pages-icons/favicon.ico">
+
+    <title>IFOUND</title>
+</head>
+
+<body>
+    <div class="top-header"></div>
+    <header class="main-header">
+        <nav class="navbar-header">
+            <div class="container-logo">
+                <a href="./index.html" class="logo-link-main-page">
+                    <img class="logo" src="./img-main-page/logo_remake.jpg" alt="logo">
+                </a>
+            </div>
+            <ul class="container-options-navbar">
+                <a href="./index.html" class="sobre-link">
+                    <li class="sobre">SOBRE NÓS</li>
+                </a>
+                <a href="./products.html" class="shop-link">
+                    <li class="shop">SHOP</li>
+                </a>
+                <a href="./about-tracker.html" class="tracker-link">
+                    <li class="tracker">THE TRACKER</li>
+                </a>
+                <a href="#" class="contato-link">
+                    <li class="contato">CONTATO</li>
+                </a>
+                <a href="./Forms/login.php" class="restrita-link">
+                    <li class="lock"><img src="./pages-icons/lock_locked.png" class="fechado" alt="locker"><img
+                            src="./pages-icons/lock_open.png" class="aberto" alt=""></li>
+                </a>
+            </ul>
+            <div class="container-perfil-img">
+                <img class="perfil-img" src="./img-main-page/perfil-img-section-main.png" alt="perfil" href="">
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-product-main">
+        <div class="container-products-content">
+            <div class="img-product-container">
+                <img src="./img-main-page/tracker.svg" alt="produtinho" class="product-show">
+
+                <img src="./pages-icons/frete.svg" alt="frete-grátis" class="frete">
+
+                <span class="gratis">FRETE GRÁTIS</span>
+
+                <hr class="division-line">
+
+                <div class="volta-container">
+                    <a href="./index.html" class="voltar"><img
+                            src="./pages-icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg" alt="voltar-icon"
+                            class="voltar-icon">VOLTAR</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="informations-product-container">
+            <h1 class="title-oferta">
+                Comprar IFOUND
+            </h1>
+            <h2 class="subtitle-oferta">
+                interessado em quantos
+            </h2>
+
+            <hr class="division-oferta-1">
+            <h1 class="unidade-text">
+                Uma unidade<br>Apartir de R$265
+            </h1>
+            <h4 class="parcela">
+                pague até 10x parcelas de R$ 26,50<br>
+                ou á Vista podendo ter 10% de desconto
+            </h4>
+            <button type="submit" class="comprar" onclick="comprar()">COMPRAR</button>
+            <script>
+                function comprar() {
+                    // Exibir aviso de compra efetuada com sucesso
+                    var aviso = document.createElement("div");
+                    aviso.innerHTML = "COMPRA EFETUADA COM SUCESSO!";
+                    aviso.style.backgroundColor = "rgb(0, 189, 28)";
+                    aviso.style.borderRadius = "30px";
+                    aviso.style.color = "white";
+                    aviso.style.padding = "10px";
+                    aviso.style.fontFamily = "Lato";
+                    aviso.style.position = "fixed";
+                    aviso.style.top = "100px";
+                    aviso.style.left = "50%";
+                    aviso.style.transform = "translateX(-50%)";
+                    aviso.style.zIndex = "9999";
+                    document.body.appendChild(aviso);
+
+                    // Remover aviso após 3 segundos
+                    setTimeout(function () {
+                        aviso.remove();
+                    }, 3000);
+                }
+            </script>
+
+            <hr class="division-oferta-2">
+            <h1 class="aviso-produto">Requer , Telefone com possibilidade de<br> conexão via bluetooth ou internet</h1>
+            <h1 class="aviso-produto-ponto">.</h1>
+        </div>
+    </section>
+
+    <footer class="abismo-2">
+        <div class="footer-container-content">
+            <img src="./img-main-page/LOGO-IMG-SECTION-MAIN.png" alt="logo-footer" class="footer-logo-img">
+            <nav class="container-footer-lists">
+                <ul class="produto">
+                    <h1>PRODUTOS</h1>
+                    <a href="./products.html">
+                        <li>CLASSIC</li>
+                    </a>
+                </ul>
+                <ul class="conta">
+                    <h1>SUA CONTA</h1>
+                    <a href="login.php">
+                        <li>GERENCIAR PERFIL</li>
+                    </a>
+                </ul>
+                <ul class="sobre-nos">
+                    <h1>SOBRE NÓS</h1>
+                    <a href="index.html">
+                        <li>HISTÓRIA</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div class="terms" id="contatinho">
+                <p class="contatos-local-empresa">
+                    Outras formas de comprar: <a href="">encontre uma Loja da IFOUND</a> ou <a href="">revendedora da
+                        empresa</a> na sua região.
+                    Ou ligue para 0800-999-9999.<br>
+                    R. Itajubá, 223 - Floresta, Belo Horizonte - MG, 30150-380<br>
+                    Os Serviços de Mídia da IFOUND são fornecidos pela IFOUND Services XXX LLC.
+                </p>
+                <hr class="termos-divisa">
+                <p class="copy-text">Copyright © 2023 IFOUND Inc. Todos os direitos reservados. IFOUND Brasil Ltda.
+                    CNPJ: 11.664.742/0001-38<br>
+                    <a href="./documents/TEMOS DE USO - iFOUND.pdf" target="_blank">Política de Privacidade</a>
+                    |
+                </p>
+                <!-- CNPJ FIGURATIVO -->
+                <div class="topo"
+                    style="position: fixed; bottom: 0;right: 10px ; width: 50px;height: 50px ;background-color: black; color: white; z-index: 999; display: flex; justify-content: center; align-items: center;">
+                    <a href="#" style="color: white; text-decoration: none;">UP</a>
+                </div>
+                <style>
+                    div.topo{
+                        cursor: pointer;
+                        border-top-left-radius: 30px;
+                        border-top-right-radius: 30px;
+                        transition: 280ms;
+                    } 
+
+                    div.topo:hover{
+                        border-top-left-radius: 30px;
+                        border-top-right-radius: 30px;
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        transition: 280ms;
+                    }
+                </style>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-hovers.css">
+
+    <!--font do googleapis-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@700&family=Rubik:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!--icon pagina-->
+    <link rel="page refencial icon" href="./pages-icons/favicon.ico">
+
+    <title>IFOUND</title>
+</head>
+
+<body>
+    <div class="top-header"></div>
+    <header class="main-header">
+        <nav class="navbar-header">
+            <div class="container-logo">
+                <a href="./index.html" class="logo-link-main-page">
+                       <img class="logo" src="./img-main-page/logo_remake.jpg" alt="logo">             
+                </a>
+            </div>
+            <ul class="container-options-navbar">
+                <a href="./index.html" class="sobre-link">
+                    <li class="sobre">SOBRE NÓS</li>
+                </a>
+                <a href="./products.html" class="shop-link">
+                    <li class="shop">SHOP</li>
+                </a>
+                <a href="./about-tracker.html" class="tracker-link">
+                    <li class="tracker">THE TRACKER</li>
+                </a>
+                <a href="#" class="contato-link">
+                    <li class="contato">CONTATO</li>
+                </a>
+            </ul>
+            <div class="container-perfil-img">
+                <img class="perfil-img" src="./img-main-page/perfil-img-section-main.png" alt="perfil" href="">
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-product-main">
+        <div class="container-products-content">
+            <div class="img-product-container">
+                <img src="./img-main-page/tracker.svg" alt="produtinho" class="product-show">
+
+                <img src="./pages-icons/frete.svg" alt="frete-grátis" class="frete">
+
+                <span class="gratis">FRETE GRÁTIS</span>
+
+                <hr class="division-line">
+
+                <div class="volta-container">
+                    <a href="./index.html" class="voltar"><img
+                            src="./pages-icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg" alt="voltar-icon"
+                            class="voltar-icon">VOLTAR</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="informations-product-container">
+            <h1 class="title-oferta">
+                Comprar IFOUND
+            </h1>
+            <h2 class="subtitle-oferta">
+                interessado em quantos ?
+            </h2>
+
+            <hr class="division-oferta-1">
+            <h1 class="unidade-text">
+                Uma unidade<br>Apartir de R$81
+            </h1>
+            <h4 class="parcela">
+                pague até 10x parcelas de R$ 8,10<br>
+                ou á Vista podendo ter 10% de desconto
+            </h4>
+            <button class="comprar">COMPRAR</button>
+            <hr class="division-oferta-2">
+            <h1 class="aviso-produto">Requer , Telefone com possibilidade de<br> conexão via bluetooth ou internet</h1>
+            <h1 class="aviso-produto-ponto">.</h1>
+        </div>
+    </section>
+
+    <footer class="abismo-2">
+        <div class="footer-container-content">
+            <img src="./img-main-page/LOGO-IMG-SECTION-MAIN.png" alt="logo-footer" class="footer-logo-img">
+            <nav class="container-footer-lists">
+                <ul class="produto">
+                    <h1>PRODUTOS</h1>
+                    <a href="#">
+                        <li>CLASSIC</li>
+                    </a>
+                </ul>
+                <ul class="conta">
+                    <h1>SUA CONTA</h1>
+                    <a href="#">
+                        <li>GERENCIAR PERFIL</li>
+                    </a>
+                </ul>
+                <ul class="sobre-nos">
+                    <h1>SOBRE NÓS</h1>
+                    <a href="#">
+                        <li>HISTÓRIA</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div class="terms">
+                <p class="contatos-local-empresa">
+                    Outras formas de comprar: <a href="">encontre uma Loja da IFOUND</a> ou <a href="">revendedora da
+                        empresa</a> na sua região.
+                    Ou ligue para 0800-999-9999.<br>
+                    R. Itajubá, 223 - Floresta, Belo Horizonte - MG, 30150-380<br>
+                    Os Serviços de Mídia da IFOUND são fornecidos pela IFOUND Services XXX LLC.
+                </p>
+                <hr class="termos-divisa">
+                <p class="copy-text">Copyright © 2023 IFOUND Inc. Todos os direitos reservados. IFOUND Brasil Ltda.
+                    CNPJ: 11.664.742/0001-38<br>
+                    <a href="./documents/TEMOS DE USO - iFOUND.pdf" target="_blank">Política de Privacidade</a>
+                    |
+                </p>
+                <!-- CNPJ FIGURATIVO -->
+            </div>
+        </div>
+    </footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

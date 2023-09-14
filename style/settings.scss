@@ -1,0 +1,141 @@
+
+@mixin global-set() {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin background-section-1() {
+  background: #fcfcfc;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px 45px 50px -25px rgba(0, 0, 0, 0.25),
+    inset 20px -120px 50px -70px rgba(0, 0, 0, 0.596);
+}
+
+@mixin background-section-2() {
+  background-color: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
+  mix-blend-mode: normal;
+}
+
+@mixin background-section-3() {
+  background-color: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  mix-blend-mode: normal;
+  box-shadow: inset 0px -70px 70px -40px rgba(0, 0, 0, 0.342);
+}
+
+@mixin background-section-5() {
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px 70px 40px -30px rgba(0, 0, 0, 0.17);
+}
+
+@mixin background-section-6() {
+  background-color: rgba(203, 203, 203, 1);
+}
+
+@mixin general-position-column() {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+@mixin general-position-row() {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes formulario {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX();
+  }
+}
+
+@keyframes carlos {
+  from {
+    transform: translateX(33em);
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(1);
+    transform: translateX(0em);
+  }
+}
+@mixin global-set() {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin background-section-1() {
+  background: #FCFCFC;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px 45px 50px -25px rgba(0, 0, 0, 0.25), inset 20px -120px 50px -70px rgba(0, 0, 0, 0.596);
+}
+
+@mixin background-section-2() {
+  background-color: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
+  mix-blend-mode: normal;
+}
+
+@mixin background-section-3() {
+  background-color: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  mix-blend-mode: normal;
+  box-shadow: inset 0px -70px 70px -40px rgba(0, 0, 0, 0.342);
+}
+
+@mixin background-section-5() {
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px 70px 40px -30px rgba(0, 0, 0, 0.17);
+}
+
+@mixin background-section-6() {
+  background-color: rgba(203, 203, 203, 1);
+}
+
+@mixin general-position-column(){
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+@mixin general-position-row(){
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
