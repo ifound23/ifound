@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-require 'connectionDB.php';
+require 'usuarios/connectionDB.php';
 
 if (isset($_POST['cadastrar'])) {
     $nome = $_POST['nome'];
@@ -27,17 +27,17 @@ if (isset($_POST['cadastrar'])) {
         $result = $stmt->execute();
 
         if ($result) {
-            echo 'Usuário cadastrado com sucesso!';
-            header("Location: singup.php");
-            exit(0);
+            echo "<script type= 'text/javascript'>alert('Usuário cadastrado com sucesso!');";
+            echo "javascript:window.location='../HTML/usuarios/signup.php';</script>";
         } else {
-            echo 'Erro ao criar o usuário';
-            header("Location: singup.php");
-            exit(0);
+            echo "<script type= 'text/javascript'>alert('Erro ao criar usuário!');";
+            echo "javascript:window.location='../HTML/usuarios/signup.php';</script>";
+           
         }
     } else {
         // Senhas não conferem, exibe na tela
-        echo 'As senhas não conferem!';
+        echo "<script type= 'text/javascript'>alert('As senhas não conferem');";
+        echo "javascript:window.location='../HTML/usuarios/signup.php';</script>";
         return;
     }
 }
@@ -69,12 +69,15 @@ if (isset($_POST['mudarsenha'])) {
         $result = $stmt->execute();
 
         if (!$result) {
-            echo 'Ocorreu um erro ao atualizar a senha';
+            echo "<script type='text/javascript'>alert('Ocorreu um erro ao alterar a senha!');";
+            echo "window.location='../HTML/usuarios/alterarsenha.php';</script>";
         } else {
-            echo 'Senha alterada!';
+            echo "<script type='text/javascript'>alert('Senha alterada com sucesso!');";
+            echo "window.location='../HTML/usuarios/alterarsenha.php';</script>";
         }
     } else {
-        echo 'Email ou senha incorretos';
+        echo "<script type='text/javascript'>alert('Email ou senha incorretos');";
+        echo "window.location='../HTML/usuarios/alterarsenha.php';</script>";
     }
 }
 
@@ -101,16 +104,20 @@ if (isset($_POST['esquecisenha'])) {
             // Envie o email com a nova senha para o usuário
            //if (mail($email, "Sua nova senha", "Sua nova senha: " . $novasenha)) {
             if (1 == 1) {
-                echo 'Senha alterada e enviada por email com sucesso!';
-                echo $novasenha;
+                echo "<script type='text/javascript'>alert('Senha alterada com sucesso: " . $novasenha . "');";
+                echo "window.location='../HTML/usuarios/esquecisenha.php';</script>";
+                
             } else {
-                echo 'Ocorreu um erro ao enviar o email com a nova senha.';
+                echo "<script type='text/javascript'>alert('ocorreu um erro ao enviar e-mail com nova senha');";
+                echo "window.location='../HTML/usuarios/esquecisenha.php';</script>";
             }
         } else {
-            echo 'Ocorreu um erro ao atualizar a senha';
+            echo "<script type='text/javascript'>alert('Ocorreu um erro ao atuaizar a senha!');";
+                echo "window.location='../HTML/usuarios/esquecisenha.php';</script>";
         }
     } else {
-        echo 'Email incorreto ou a conta foi excluída.';
+        echo "<script type='text/javascript'>alert('E-mail incorreto ou a senha foi excluida!');";
+                echo "window.location='../HTML/usuarios/esquecisenha.php';</script>";
     }
 }
 
@@ -131,16 +138,19 @@ if (isset($_POST['login'])) {
 
         if ($row['status_conta'] === 'excluida') {
             // A conta está marcada como excluída, exibe uma mensagem de erro
-            echo 'A sua conta foi excluída e não é possível fazer login.';
+            echo "<script type= 'text/javascript'>alert('Sua conta foi excluida, não foi possivel fazer login!');";
+            echo "javascript:window.location='../HTML/usuarios/login.php';</script>";
         } else {
             // Login bem-sucedido
             $_SESSION['user_id'] = $row['id'];
-            header("Location: ../restrito/html/cadastro.html");
+            $_SESSION['statuslogin'] = 'true';
+            header("Location: ../HTML/dispositivos/cadastro.php");
             exit();
         }
     } else {
         // Credenciais inválidas, exibe uma mensagem de erro
-        echo 'Email ou senha incorretos';
+        echo "<script type= 'text/javascript'>alert('E-mail ou senha incorretos!');";
+        echo "javascript:window.location='../HTML/usuarios/login.php';</script>";
     }
 }
 
@@ -164,12 +174,15 @@ if (isset($_POST['excluir'])) {
         $stmtUpdate->bindValue(':email', $email);
 
         if ($stmtUpdate->execute()) {
-            echo 'Conta marcada como excluída com sucesso!';
+            echo "<script type= 'text/javascript'>alert('Conta marcada como excluida com sucesso!');";
+            echo "javascript:window.location='../HTML/usuarios/excluir.php';</script>";
         } else {
-            echo 'Erro ao marcar a conta como excluída.';
+            echo "<script type= 'text/javascript'>alert('Erro ao marcar conta como excluida!');";
+            echo "javascript:window.location='../HTML/usuarios/excluir.php';</script>";
         }
     } else {
-        echo 'Email ou senha incorretos!';
+        echo "<script type= 'text/javascript'>alert('E-mail ou senha incorretos!');";
+        echo "javascript:window.location='../HTML/usuarios/excluir.php';</script>";
     }
 }
 

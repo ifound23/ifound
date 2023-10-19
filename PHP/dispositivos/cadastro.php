@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['nome'];
 
     // Inclui o arquivo de conexão
-    require_once 'conexao.php';
+    require_once './conexao.php';
 
     // Cria o comando SQL para inserção dos dados
     $sql = "INSERT INTO ifound (id, nome) VALUES ('$dispid', '$name')";
@@ -14,10 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Executa o comando SQL
     if ($conn->query($sql) === TRUE) {
         echo "<script type= 'text/javascript'>alert('Cadastro realizado com sucesso!');";
-        echo "javascript:window.location='../html/cadastro.html';</script>";
+        echo "javascript:window.location='../../HTML/dispositivos/cadastro.php';</script>";
+       
     } else {
         echo "<script type= 'text/javascript'>alert('Erro ao cadastrar dispositivo!');";
-        echo "javascript:window.location='../html/cadastro.html';</script>";
+        echo "javascript:window.location='../../HTML/dispositivos/cadastro.php';</script>";
     }
 
     // Fecha a conexão com o banco de dados

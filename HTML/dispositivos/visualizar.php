@@ -1,5 +1,5 @@
 <?php
-require_once 'conexao.php';
+require_once '../../PHP/dispositivos/conexao.php';
 
 $sql = "SELECT id, nome FROM ifound";
 $result = $conn->query($sql);
@@ -41,7 +41,7 @@ $result = $conn->query($sql);
             ?>
         </tbody>
         </table>
-        <a href="../html/cadastro.html" name="Voltar" class="botao">Voltar</a>
+        <a href="./cadastro.php" name="Voltar" class="botao">Voltar</a>
  </div>
 
  <style>

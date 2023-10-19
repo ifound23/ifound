@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conexao.php';
+require_once './conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $dispid = $_POST['id'];
@@ -18,14 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $sql_update = "UPDATE ifound SET nome = '$newname' WHERE nome = '$name' AND id = '$dispid'";
       if ($conn->query($sql_update) === TRUE) {
         echo "<script type='text/javascript'>alert('Alteração bem sucedida!');";
-        echo "window.location='../html/alterar.html';</script>";
+        echo "window.location='../../HTML/dispositivos/alterar.php';</script>";
       } else {
         echo "<script type='text/javascript'>alert('Erro ao alterar dispositivo!');";
-        echo "window.location='../html/alterar.html';</script>";
+        echo "window.location='../../HTML/dispositivos/alterar.php';</script>";
       }
     } else {
       echo "<script type='text/javascript'>alert('ID ou Nome do dispositivo incorretos!');";
-      echo "window.location='../html/alterar.html';</script>";
+      echo "window.location='../../HTML/dispositivos/alterar.php';</script>";
     }
   }
 } 
