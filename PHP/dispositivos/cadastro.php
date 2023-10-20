@@ -1,7 +1,10 @@
 <?php
 // Verifica se o formulário foi submetido
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Recupera os valores do formulário
+    $userid = $_SESSION['user_id'];
     $dispid = $_POST['id'];
     $name = $_POST['nome'];
 
@@ -9,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once './conexao.php';
 
     // Cria o comando SQL para inserção dos dados
-    $sql = "INSERT INTO ifound (id, nome) VALUES ('$dispid', '$name')";
+    $sql = "INSERT INTO ifound (id, nome, user_id) VALUES ('$dispid', '$name', '$userid')";
 
     // Executa o comando SQL
     if ($conn->query($sql) === TRUE) {
@@ -25,3 +28,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->close();
 }
 ?>
+
