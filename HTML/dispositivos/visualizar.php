@@ -1,11 +1,10 @@
 <?php
 require_once '../../PHP/dispositivos/conexao.php';
 
+session_start();
+$userid = $_SESSION['user_id'];
 $sql = "SELECT id, nome FROM ifound";
 $result = $conn->query($sql);
-
-
-
 
 ?>
 
