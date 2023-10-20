@@ -1,7 +1,7 @@
 <?php
 // Dados do banco de dados
 $host = 'localhost';
-$db = 'dispositivo';
+$db = 'ifound';
 $user = 'root';
 $password = '';
 
