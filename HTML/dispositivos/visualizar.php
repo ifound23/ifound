@@ -3,7 +3,7 @@ require_once '../../PHP/dispositivos/conexao.php';
 
 session_start();
 $userid = $_SESSION['user_id'];
-$sql = "SELECT id, nome FROM ifound";
+$sql = "SELECT id, nome FROM ifound WHERE user_id = '$userid'";
 $result = $conn->query($sql);
 
 ?>
