@@ -63,7 +63,7 @@ if ($_SESSION['statuslogin'] !== 'true') {
             </div>
 
             <div class="alter-line">
-                <a href="./alterar.php" name="alter" class="botao" id="alterar">ALTERAR
+                <a href="./alterar.php" name="alter" class="botao" id="alterar"style="color: #ffc700; text-shadow: 4px 4px 3px #ffffff">ALTERAR
                 </a>
                 <img src="../../ASSETS/img/alter.svg" alt="" class="altera"> 
             </div>

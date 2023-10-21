@@ -622,6 +622,7 @@ li.bateria {
 img.system-img-about {
   width: 100%;
   padding: 50px;
+  filter: saturate(0);
 }
 
 /*SECTION 3 ACABA AQUI*/
@@ -705,7 +706,10 @@ button.compra-oferta {
   transition: 280ms;
 }
 
-
+img.computer-3d-section{
+  position: absolute;
+  z-index: -120;
+}
 
 /*SECTION 6 COMEÇA AQUI*/
 

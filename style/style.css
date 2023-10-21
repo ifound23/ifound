@@ -97,6 +97,11 @@ header.main-header {
           backdrop-filter: blur(5px);
 }
 
+a.insta {
+  text-decoration: none;
+  color: black;
+}
+
 nav.navbar-header {
   width: 90%;
   height: 60px;
@@ -592,6 +597,7 @@ li.bateria {
 img.system-img-about {
   width: 100%;
   padding: 50px;
+  filter: saturate(0);
 }
 
 /*SECTION 3 ACABA AQUI*/
@@ -656,6 +662,11 @@ button.compra-oferta {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   transition: 280ms;
+}
+
+img.computer-3d-section {
+  position: absolute;
+  z-index: -120;
 }
 
 /*SECTION 6 COMEÇA AQUI*/

@@ -97,6 +97,11 @@ header.main-header {
           backdrop-filter: blur(5px);
 }
 
+a.insta {
+  text-decoration: none;
+  color: black;
+}
+
 nav.navbar-header {
   width: 90%;
   height: 60px;

@@ -69,7 +69,7 @@ if ($_SESSION['statuslogin'] !== 'true') {
         </div>
 
             <div class="delete-line">
-                <a href="delete.php" name="delete" class="botao" id="deletar">DELETAR
+                <a href="delete.php" name="delete" class="botao" id="deletar" style="color: #f40900; text-shadow: 4px 4px 3px #ffffff">DELETAR
                 </a>
                 <img src="../../ASSETS/img/delete.svg" alt="" class="lixo">
             </div>

@@ -49,7 +49,7 @@ if ($_SESSION['statuslogin'] !== 'true') {
         <div class="botoes">
             <br>
             <div class="alter-line">
-                <a href="cadastro.php" name="alter" class="botao" id="alterar">CADASTRO
+                <a href="cadastro.php" name="alter" class="botao" id="alterar" style="color: #6bfa73; text-shadow: 4px 4px 3px #ffffff">CADASTRO
                 </a>
                 <img src="../../ASSETS/img//adicione.svg" alt="" class="altera"> 
             </div>
