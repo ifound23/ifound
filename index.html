@@ -52,8 +52,9 @@
                 </a>
             </ul>
             <div class="container-perfil-img">
-                <a href="HTML/usuarios/login.php" class="link-perfil-img-container" id="id_perfil"> <img class="perfil-img"
-                        src="ASSETS/img-main-page/perfil-img-section-main.png" alt="perfil" href=""></a>
+                <a href="HTML/usuarios/login.php" class="link-perfil-img-container" id="id_perfil"> <img
+                        class="perfil-img" src="ASSETS/img-main-page/perfil-img-section-main.png" alt="perfil"
+                        href=""></a>
 
             </div>
         </nav>
@@ -73,6 +74,12 @@
             font-family: "Lato", sans-serif;
             border-radius: 5px;
             z-index: 999;
+            transition: 280ms;
+        }
+
+        #voltar-topo:hover {
+            bottom: 50px;
+            transition: 280ms;
         }
     </style>
 
@@ -85,14 +92,27 @@
             </p>
         </div>
     </section>
-   
+
     <section class="section-content-1" id="sobre_nos">
         <div class="container-content-section-1">
             <p class="text-content-section-1">O <strong>IFOUND</strong> é o seu assistente pessoal de localização,
                 ajudando a encontrar pertences perdidos de forma rápida e fácil. Com seu design compacto, é uma solução
                 confiável e eficiente para evitar perdas e facilitar o dia a dia. Nunca mais se preocupe em perder seus
-                pertences em casa, trabalho ou em qualquer lugar.<br><p>Nos siga no nosso : </p><a class="insta" href="https://www.instagram.com/ifound.ofc/">INSTAGRAM</a></p>
-                
+                pertences em casa, trabalho ou em qualquer lugar.<br>
+            <p style="font-family: 'Lato', sans-serif;">Nos siga no nosso : </p><a class="insta" style="font-family: 'Lato', sans-serif;" href="https://www.instagram.com/ifound.ofc/">INSTAGRAM</a></p>
+            <style>
+                a.insta{
+                    color: #000000;
+                    border-bottom: solid 2px rgba(0, 0, 0, 0);                      
+                    transition: 280ms;
+                }
+
+                a.insta:hover{
+                    color: #000000;
+                    border-bottom: solid 2px black;
+                    transition: 280ms;
+                }
+            </style>
         </div>
 
         <div class="img-container-section-1">
@@ -110,12 +130,18 @@
     <section class="section-content-2">
         <div class="container-content-section-2">
             <ul class="estagio">
-                <a href="./products.html" target="_blank"><li class="escute">Escutou. <img class="location1"
-                    src="ASSETS/pages-icons/volume_up_FILL0_wght400_GRAD0_opsz48.png" alt=""></li></a>
-                        <a href="./products.html" target="_blank" ><li class="observe">Observou. <img class="location2"
-                            src="ASSETS/pages-icons/visibility_FILL0_wght400_GRAD0_opsz48.png" alt=""> </li></a>
-                        <a href="./products.html" target="_blank"><li class="ache">Achou. <img class="location3"
-                            src="ASSETS/pages-icons/travel_explore_FILL0_wght400_GRAD0_opsz48.png" alt=""></li></a>
+                <a href="./products.html" target="_blank">
+                    <li class="escute">Escutou. <img class="location1"
+                            src="ASSETS/pages-icons/volume_up_FILL0_wght400_GRAD0_opsz48.png" alt=""></li>
+                </a>
+                <a href="./products.html" target="_blank">
+                    <li class="observe">Observou. <img class="location2"
+                            src="ASSETS/pages-icons/visibility_FILL0_wght400_GRAD0_opsz48.png" alt=""> </li>
+                </a>
+                <a href="./products.html" target="_blank">
+                    <li class="ache">Achou. <img class="location3"
+                            src="ASSETS/pages-icons/travel_explore_FILL0_wght400_GRAD0_opsz48.png" alt=""></li>
+                </a>
             </ul>
             <div class="container-logo-img-section-2">
                 <img class="logo-img-section-2" src="ASSETS/img-main-page/LOGO-IMG-SECTION-2.jpg" alt="logo-section-2">
@@ -127,10 +153,8 @@
 
         <div class="app-content-section-no-video">
             <ul class="history" href="">
-                <li class="title-no-video">Nossa<br>História <img
-                        src="./ASSETS/pages-icons/library_books_FILL0_wght400_GRAD0_opsz48.svg" alt=""
-                        class="historia-icon-hover"></li>
-                <li class="history-resume">Parece simples mas não é</li>
+                <li class="title-no-video">Uma ideia<br>Simples</li>
+                <li class="history-resume">mas complexa</li>
             </ul>
             <hr class="linha-historia">
             <h3 class="point">.</h3>
@@ -160,10 +184,10 @@
         <div class="container-content-section-4">
             <h1 class="oferta-title">
                 A partir de<br>
-                12x de R$ 19,90
+                10x de R$ 26,50
             </h1>
             <span class="preco">
-                Um Total de R$ 238,80
+                Um Total de R$ 265,00
             </span>
             <button class="compra-oferta" type="submit"
                 onclick="window.location.href='./products.html'">COMPRAR</button>
@@ -235,13 +259,16 @@
                 <input type="checkbox" id="aceite-termos"> Eu aceito os termos de uso.
             </label>
 
-            <button id="aceitar-termos" style="border: none; width: 20px; padding: 10px; cursor: pointer; width: 100%; font-weight: 800;" disabled>ACEITAR</button>
+            <button id="aceitar-termos"
+                style="border: none; width: 20px; padding: 10px; cursor: pointer; width: 100%; font-weight: 800;"
+                disabled>ACEITAR</button>
         </div>
 
         <style>
-            button#aceitar-termos:hover{
+            button#aceitar-termos:hover {
                 transition: 0.8s;
             }
+
             #termos-container {
                 position: fixed;
                 bottom: 10px;

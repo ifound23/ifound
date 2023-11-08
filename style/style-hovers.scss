@@ -111,10 +111,6 @@ li.lock:hover > img.fechado {
   }
 }
 
-div.app-content-section-no-video:hover {
-  transition: 280ms;
-}
-
 li.escute:hover {
   letter-spacing: 2px;
   transition: 300ms;
@@ -141,13 +137,6 @@ li.ache:hover {
 }
 
 li.ache:hover img.location3 {
-  opacity: 1;
-  transition: 300ms;
-}
-
-li.title-no-video:hover img.historia-icon-hover {
-  width: 80px;
-  display: flex;
   opacity: 1;
   transition: 300ms;
 }
@@ -314,10 +303,6 @@ li.contato:hover {
   transition: 280ms;
 }
 
-div.app-content-section-no-video:hover {
-  transition: 280ms;
-}
-
 li.escute:hover {
   letter-spacing: 2px;
   transition: 300ms;
@@ -346,21 +331,6 @@ li.ache:hover {
 li.ache:hover img.location3 {
   opacity: 1;
   transition: 300ms;
-}
-
-li.title-no-video:hover img.historia-icon-hover {
-  width: 80px;
-  display: flex;
-  opacity: 1;
-  transition: 300ms;
-}
-
-ul.history:hover {
-  transition: 300ms;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
-  border-radius: 30px;
-  scale: (1.05);
-  transform: translateY(-3px);
 }
 
 img.logo-img-section-2:hover {

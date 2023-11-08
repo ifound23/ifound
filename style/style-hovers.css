@@ -469,10 +469,6 @@ div.app-content-section-no-video {
   text-align: justify;
 }
 
-div.app-content-section-no-video {
-  transition: 300ms;
-}
-
 ul.history {
   list-style: none;
   line-height: 5em;
@@ -597,6 +593,7 @@ li.bateria {
 img.system-img-about {
   width: 100%;
   padding: 50px;
+  filter: saturate(0);
 }
 
 /*SECTION 3 ACABA AQUI*/
@@ -661,6 +658,11 @@ button.compra-oferta {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   transition: 280ms;
+}
+
+img.computer-3d-section {
+  position: absolute;
+  z-index: -120;
 }
 
 /*SECTION 6 COMEÇA AQUI*/
@@ -1443,10 +1445,6 @@ div.app-content-section-no-video {
   text-align: justify;
 }
 
-div.app-content-section-no-video {
-  transition: 300ms;
-}
-
 ul.history {
   list-style: none;
   line-height: 5em;
@@ -2099,10 +2097,6 @@ li.lock:hover > img.fechado {
     filter: opacity(0%);
   }
 }
-div.app-content-section-no-video:hover {
-  transition: 280ms;
-}
-
 li.escute:hover {
   letter-spacing: 2px;
   transition: 300ms;
@@ -2129,13 +2123,6 @@ li.ache:hover {
 }
 
 li.ache:hover img.location3 {
-  opacity: 1;
-  transition: 300ms;
-}
-
-li.title-no-video:hover img.historia-icon-hover {
-  width: 80px;
-  display: flex;
   opacity: 1;
   transition: 300ms;
 }
@@ -2301,10 +2288,6 @@ li.contato:hover {
   transition: 280ms;
 }
 
-div.app-content-section-no-video:hover {
-  transition: 280ms;
-}
-
 li.escute:hover {
   letter-spacing: 2px;
   transition: 300ms;
@@ -2333,21 +2316,6 @@ li.ache:hover {
 li.ache:hover img.location3 {
   opacity: 1;
   transition: 300ms;
-}
-
-li.title-no-video:hover img.historia-icon-hover {
-  width: 80px;
-  display: flex;
-  opacity: 1;
-  transition: 300ms;
-}
-
-ul.history:hover {
-  transition: 300ms;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
-  border-radius: 30px;
-  scale: 1.05;
-  transform: translateY(-3px);
 }
 
 img.logo-img-section-2:hover {
